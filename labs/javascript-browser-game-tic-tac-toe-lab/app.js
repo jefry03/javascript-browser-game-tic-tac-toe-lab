@@ -83,8 +83,7 @@ function checkForWinner() {
 }
 
 function checkForTie() {
-    if (winner) 
-        return;
+    if (winner) return;
     if (!board.includes('')) {
         tie = true;
     }

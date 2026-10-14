@@ -1,0 +1,32 @@
+h1{
+    color:blue ;
+    background-color: red;
+}
+h2{
+    color:green ;
+    
+
+}
+.main-sections{
+    color: purple;
+    background-color: aqua;
+}
+#finished-skill{
+   background-color: red; 
+   width: 100px;
+   font-size: 30px;
+   font-weight: 900;
+    
+}
+#project-1{
+   border-style: solid ;
+   border-color:  grey;
+   border-width: 2px;
+   border : blue 10px solid;
+   padding-left: 0 0 20px 10px; 
+   margin-top:100px ;
+}
+#exrcise1{
+    border : green 3px solid;
+    margin : 0px 0px 10px 10px;
+}

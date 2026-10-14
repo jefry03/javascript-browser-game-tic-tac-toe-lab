@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family: 'Funnel Sans', sans-serif;
+}
+
+.youtube-pannel {
+    background: black;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+}
+
+nav{
+    background: red;
+    height: 100px;
+}
+
+.btn{
+background-color: #A70717;
+width:343px;
+height:48px;
+border-radius: 8px;
+color: #fff;
+border: none;
+font-weight: 600;
+padding: 12px 48px;
+transition: background-color 0.4s;
+
+}
+
+.btn:hover{
+background-color: green;
+cursor: pointer;
+}
+.btn:active{
+background-color:blue;
+}
+nav > a{
+    color: green;
+    font-size: 2rem;
+}
+html{
+    font-size: 20px;
+}
