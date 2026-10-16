@@ -2,316 +2,67 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Connect Four</title>
-
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="styles.css">
-	<script defer src="app.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="app.js"></script>
+    <title>connect 4</title>
 </head>
-
-<body>
-
-	<div id="main-container">
-
-		<div id="player">
-
-			<h1 id="player-type">Player - 1</h1>
-
-		</div>
-
-		<div id="grid">
-
-			<div class="row">
-
-				<div class="col">
-
-					<button class="btn btn-1"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-2"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-3"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-4"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-5"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-6"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-7"></button>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col">
-
-					<button class="btn btn-8"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-9"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-10"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-11"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-12"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-13"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-14"></button>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col">
-
-					<button class="btn btn-15"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-16"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-17"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-18"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-19"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-20"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-21"></button>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col">
-
-					<button class="btn btn-22"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-23"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-24"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-25"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-26"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-27"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-28"></button>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col">
-
-					<button class="btn btn-29"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-30"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-31"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-32"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-33"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-34"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-35"></button>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col">
-
-					<button class="btn btn-36"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-37"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-38"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-39"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-40"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-41"></button>
-
-				</div>
-
-				<div class="col">
-
-					<button class="btn btn-42"></button>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<button type="button" id="reset-btn">Play Again</button>
-
-	</div>
-
-	<script src="script.js"></script>
-
-</body>
+ <body>
+    <div class="timer-container">
+    <span id="timer">time remmaining :</span> 
+</div>
+    Player name: <b>
+    <div id="playerName"></div>
+    <div id="SetPlayerName">
+        <input type="text" id="playerName" placeholder="Enter player name" />
+        <button >Set player name</button>
+    </div>
+    <section class="board">
+        <div class="sqr" id="0"></div>
+        <div class="sqr" id="1"></div>
+        <div class="sqr" id="2"></div>
+        <div class="sqr" id="3"></div>
+        <div class="sqr" id="4"></div>
+        <div class="sqr" id="5"></div>
+        <div class="sqr" id="6"></div>
+        <div class="sqr" id="7"></div>
+        <div class="sqr" id="8"></div>
+        <div class="sqr" id="9"></div>
+        <div class="sqr" id="10"></div>
+        <div class="sqr" id="11"></div>
+        <div class="sqr" id="12"></div>
+        <div class="sqr" id="13"></div>
+        <div class="sqr" id="14"></div>
+        <div class="sqr" id="15"></div>
+        <div class="sqr" id="16"></div>
+        <div class="sqr" id="17"></div>
+        <div class="sqr" id="18"></div>
+        <div class="sqr" id="19"></div>
+        <div class="sqr" id="20"></div>
+        <div class="sqr" id="21"></div>
+        <div class="sqr" id="22"></div>
+        <div class="sqr" id="23"></div>
+        <div class="sqr" id="24"></div>
+        <div class="sqr" id="25"></div>
+        <div class="sqr" id="26"></div>
+        <div class="sqr" id="27"></div>
+        <div class="sqr" id="28"></div>
+        <div class="sqr" id="29"></div>
+        <div class="sqr" id="30"></div>
+        <div class="sqr" id="31"></div>
+        <div class="sqr" id="32"></div>
+        <div class="sqr" id="33"></div>
+        <div class="sqr" id="34"></div>
+        <div class="sqr" id="35"></div>
+        <div class="sqr" id="36"></div>
+        <div class="sqr" id="37"></div>
+        <div class="sqr" id="38"></div>
+        <div class="sqr" id="39"></div>
+        <div class="sqr" id="40"></div>
+        <div class="sqr" id="41"></div>
+    </section>
+    <button type="button" id="reset">Play Again</button>
+    </body>
 
 </html>
